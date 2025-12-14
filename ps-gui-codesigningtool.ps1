@@ -371,14 +371,14 @@ function signFile {
 }
 function createCert {
     $name = $txtName.Text
-    $org = $orgTextBox.Text
+    $org = $txtOrg.Text
     $workspace = $txtWorkspace.Text
-    $password = $passwordTextBox.Text
-    $cn = $cnTextBox.Text
+    $password = $txtPassword.Text
+    $cn = $txtCN.Text
     $email = $txtEmail.Text
-    $country = $countryTextBox.Text
-    $state = $stateTextBox.Text
-    $city = $cityTextBox.Text
+    $country = $txtCountry.Text
+    $state = $txtState.Text
+    $city = $txtCity.Text
 
     if (-not $name -or -not $org -or -not $workspace -or -not $password -or -not $cn -or -not $email -or -not $country -or -not $state -or -not $city) {
         [System.Windows.Forms.MessageBox]::Show("Please fill all fields.", "Error", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Error)
